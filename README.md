@@ -16,7 +16,6 @@ BEGIN
 
   SET @orderNumber = (SELECT MAX(orderNumber) FROM orders);
 
-  // Assuming a loop for each product
   FOR EACH product IN products:
     SAVEPOINT before_product_1;
 
